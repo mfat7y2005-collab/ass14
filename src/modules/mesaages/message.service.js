@@ -1,4 +1,4 @@
-// --- إرسال رسالة جديدة ---
+
 export const sendMessage = async (req, res, next) => {
     const { content, userId } = req.body;
     const user = await db_service.findById({
